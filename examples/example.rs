@@ -1,19 +1,3 @@
-# timerfd-mio: A High-Precision Timer for Unix Systems
-
-`timerfd-mio` is a Rust crate designed to provide a safe and ergonomic interface for managing high-precision timers on Unix systems. It leverages `rustix` for system-level operations and integrates seamlessly with `mio` for non-blocking I/O event polling.
-
-## Features
-
-- High-precision timers using the `timerfd` interface.
-- Safe and ergonomic Rust API.
-- Seamless integration with `mio` for non-blocking I/O.
-- Support for both one-shot and periodic timers.
-
-## Usage
-
-Here's a quick example of how to use `TimerFd`:
-
-```rust
 use std::time::Duration;
 
 fn main() {
@@ -45,8 +29,3 @@ fn main() {
         }
     }
 }
-```
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
