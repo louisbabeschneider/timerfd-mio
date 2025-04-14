@@ -1,4 +1,6 @@
 #![warn(missing_debug_implementations)]
+#[cfg(not(target_os = "linux"))]
+compile_error!("This crate is only compatible with Linux.");
 
 use rustix::fd::OwnedFd;
 use rustix::time::{Itimerspec, TimerfdClockId, Timespec};
